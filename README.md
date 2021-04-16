@@ -10,6 +10,7 @@ Thats all you need for running this project
 
 You can install mysql-connector by typing the following command in cmd or terminal :
   
-  ~ pip install mysql-connector
-             or
-  ~ pip3 install mysql-connector
+#    ~ pip install mysql-connector
+  
+  
+#    ~ pip3 install mysql-connector
