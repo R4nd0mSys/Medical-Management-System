@@ -8,6 +8,8 @@
 
 Thats all you need for running this project
 
-You can install spl-connector typing the following command in cmd or terminal :
+You can install mysql-connector by typing the following command in cmd or terminal :
   
   ~ pip install mysql-connector
+             or
+  ~ pip3 install mysql-connector
