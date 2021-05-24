@@ -1,5 +1,6 @@
 ##hospital management software
 ##PRINTING WELCOME NOTE
+import getpass
 while(True):
     print("""
                                             =================================================================================
@@ -10,7 +11,7 @@ while(True):
     """)
     ##creating database connectivity
     import mysql.connector
-    passwd=str(input("ENTER THE DATABASE PASSWORD;"))
+    passwd=getpass.getpass("Enter MySql Database Password ")
     
     mysql=mysql.connector.connect(host="localhost",user="root",passwd=passwd)
     mycursor=mysql.cursor()
@@ -30,6 +31,7 @@ while(True):
         print("""
                                                                                 1. SIGN IN (LOGIN)
                                                                                 2. SIGN UP (REGISTER)
+                                                                                3. Exit
                                                                                 """)
     
         r=int(input("enter your choice:"))
@@ -79,7 +81,7 @@ while(True):
                             ##displaying the task you can perform
                             print("""
                                                                       1.ADMINISTRATION
-                                                                      2.PATIENT (ADMISSION NAD DISCHARGE PROCESS)
+                                                                      2.PATIENT (ADMISSION AND DISCHARGE PROCESS)
                                                                       3.SIGN OUT
                                                                       
                                                                       """)
@@ -297,7 +299,10 @@ while(True):
                     else:
                         break
         
-    
+        elif r==3:
+            break
+
+        break
     
 
 
